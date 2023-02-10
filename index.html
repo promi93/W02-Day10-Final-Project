@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/iconCalc.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/calculator.css">
+    <title>Final Project calculator</title>
+</head>
+
+<body>
+    <h1>My calculator on Js</h1>
+
+
+    <div class="contaier">
+        <div class="calculator">
+            <form>
+                <div class="text-display">
+                    <input id="operazioni" type="text" name="display text" onclick="cancella()">
+                </div>
+                <div>
+                    <input id="C" class="c" type="button" value="C" onclick="cancella()">
+                    <input id="." class="module" type="button" value="." onclick="n(this.id)">
+                    <input id="/" class="module" type="button" value="/" onclick="n(this.id)">
+                    <input id="%" class="module" type="button" value="%" onclick="n(this.id)">
+                </div>
+                <div>
+                    <input id="7" type="button" value="7" onclick="n(this.id)">
+                    <input id="8" type="button" value="8" onclick="n(this.id)">
+                    <input id="9" type="button" value="9" onclick="n(this.id)">
+                    <input id="*" class="module"type="button" value="*" onclick="n(this.id)">
+                </div>
+                <div>
+                    <input id="4" type="button" value="4" onclick="n(this.id)">
+                    <input id="5" type="button" value="5" onclick="n(this.id)">
+                    <input id="6" type="button" value="6" onclick="n(this.id)">
+                    <input id="-" class="module" type="button" value="-" onclick="n(this.id)">
+                </div>
+                <div>
+                    <input id="1" type="button" value="1" onclick="n(this.id)">
+                    <input id="2" type="button" value="2" onclick="n(this.id)">
+                    <input id="3" type="button" value="3" onclick="n(this.id)">
+                    <input id="+" class="module" type="button" value="+" onclick="n(this.id)">
+                </div>
+                <div>
+                    <input id="00" type="button" value="00" onclick="n(this.id)">
+                    <input id="0"  type="button" value="0" onclick="n(this.id)">
+                    <input id="="  type="button" value="=" class="equal" onclick="operazione()">
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="./assets/js/calcul.js"></script>
+</body>
+
+</html>
