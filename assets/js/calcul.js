@@ -1,11 +1,18 @@
 
+var reset;
 
  function n(dato){ 
-     document.getElementById("operazioni").value += dato;    
+     if (reset==true) {
+        document.getElementById("operazioni").value = "";  
+        document.getElementById("operazioni").value += dato;  
+     } else {
+        document.getElementById("operazioni").value += dato;  
+     } 
   }
  
  function operazione() { 
  document.getElementById("operazioni").value = eval(document.getElementById("operazioni").value); 
+ reset = true
  }
  
  function cancella() { 
