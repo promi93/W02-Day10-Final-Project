@@ -47,13 +47,13 @@ h1 {
     width: 60px;
     height: 60px;
     border-radius: 50px;
-    box-shadow:  -8px -8px 15px -8px rgba(0, 0, 0, 0.377), 5px 5px 15px 0px rgba(0, 0, 0, 0.377);
     border: 0;
     outline: none;
     font-size: 30px;
     color: rgb(73, 30, 30);
     margin: 14px;
     cursor: pointer;
+    padding: 0.2em;
 }
 
 form .text-display {
@@ -67,6 +67,7 @@ form .text-display input {
     color: whitesmoke;
     font-size: 30px;    
     width:  90%;
+    border-radius: 1px;
     box-shadow: none;
     cursor:auto;
 }
