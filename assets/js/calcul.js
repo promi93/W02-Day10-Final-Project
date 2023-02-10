@@ -3,10 +3,11 @@ var reset;
 
  function n(dato){ 
      if (reset==true) {
-        document.getElementById("operazioni").value = "";  
-        document.getElementById("operazioni").value += dato;  
+        document.getElementById("operazioni").value = "";
+        reset = false;
+        document.getElementById("operazioni").value += dato;
      } else {
-        document.getElementById("operazioni").value += dato;  
+        document.getElementById("operazioni").value += dato;
      } 
   }
  
